@@ -32,7 +32,8 @@ app.use(express.json())
 // Per i permessi di accesso CORS tra client e server
 app.use(cors())
 
-const port=35907;
+const port=process.env.PORT;
+
 /*
 const database = {
 	users: [
